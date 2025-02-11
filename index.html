@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="main-header">
         <h1>Konversi Suhu</h1>
     </header>
 
@@ -20,30 +20,28 @@
 
         <!-- form input -->
         <section>
-            <form action="">
-                <div>
-                    <label for="input-main">Celcius(&deg;C):</label>
-                    <input type="number" id="input-main">
-                </div>
-                <div>
-                    <button>Konversi</button>
-                    <button>Reset</button>
-                    <button>Reverse</button>
-                </div>
-            </form>
+            <div class="input-group">
+                <label for="celcius">Celcius(&deg;C):</label>
+                <input type="number" id="celcius" class="form-control">
+            </div>
+            <div>
+                <button onclick="convert()">Konversi</button>
+                <button>Reset</button>
+                <button>Reverse</button>
+            </div>
         </section>
 
         <!-- hasil konversi -->
         <section>
-            <div>
-                <label for="input-result">Fahrenheit(&deg;F):</label>
-                <input type="text" id="input-result" readonly>
+            <div class="input-group">
+                <label for="fahrenheit">Fahrenheit(&deg;F):</label>
+                <input type="text" id="fahrenheit" class="form-control" readonly>
             </div>
         </section>
 
         <!-- cara konversi suhu -->
         <section>
-            <div>
+            <div class="input-group">
                 <label for="cara-konversi">Cara konversi suhu:</label>
                 <input type="text" id="cara-konversi" readonly>
             </div>
@@ -67,5 +65,7 @@
     </main>
 
     <footer></footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,1 +1,21 @@
 /* sintak css */
+
+main {
+    max-width: 750px;
+    justify-self: center;
+    background-color: bisque;
+    border-radius: 8px;
+}
+
+.main-header {
+    text-align: center;
+}
+
+section {
+    padding: 8px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
