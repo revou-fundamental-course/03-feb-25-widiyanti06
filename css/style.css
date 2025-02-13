@@ -1,21 +1,94 @@
-/* sintak css */
-
-main {
-    max-width: 750px;
-    justify-self: center;
-    background-color: bisque;
-    border-radius: 8px;
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
 }
 
-.main-header {
+/* styling text heaader */
+h1 {
+    color: bisque;
+    font-weight: bold;
+    font-size: clamp(16px, 3vw, 50px);
     text-align: center;
 }
 
-section {
+/* styling input */
+.input-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 600px;
+}
+
+/* styling flex*/
+.items {
+    display: flex;
+    flex-direction: column;
+    border: 3px;
+    background-color: #eebf99;
+    border-radius: 9px;
+    min-width: 320px;
+    margin: 5px;
+    padding: 15px 15px 15px 15px;
+}
+
+/* styling agar konten ditengah */
+.konversi {
+    text-align: center;
+}
+
+#cara-konversi {
+    text-align: center;
+}
+
+label{
+    font-weight: 600;
+    color: rgb(31, 18, 37);
+    margin: 5px;
+}
+
+/* styling form input */
+input {
+    height: 30px;
+    border-radius: 9px;
+    border-color: rgb(157, 53, 255);
+    border-style: groove;
+    margin: 5px;
+}
+
+/* styling button */
+.buttonStyle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 90px;
+    color: white;
+    background-color: rgb(172, 109, 231);
+    border: 3px;
+    border-radius: 7px;
+    border-style: groove;
+    margin: 3px;
+    height: 35px;
+}
+
+/* styling artikel*/
+article {
+    width: 300px;
+    height: 140px;
+    border: 2px;
+    border-radius: 9px;
+    border-color: rgb(157, 53, 255);
+    border-style: groove;
+    background-color: white;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
     padding: 8px;
 }
 
-.input-group {
-    display: flex;
-    flex-direction: column;
+p {
+    text-align: center;
 }
